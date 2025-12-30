@@ -3,7 +3,7 @@
 Summary:        Read and write TIFF(r) files with Python
 Name:           python-%{module}
 Version:        2024.9.20
-Release:        1
+Release:        2
 Source0:	https://github.com/cgohlke/tifffile/archive/refs/tags/v%{version}/%{module}-%{version}.tar.gz
 License:        BSD
 Group:          Development/Python
