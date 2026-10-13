@@ -10,12 +10,12 @@ Group:          Development/Python
 URL:            https://www.lfd.uci.edu/~gohlke/
 
 BuildRequires:  pkgconfig(python3)
-BuildRequires:  python3dist(setuptools)
+BuildRequires:  python%{pyver}dist(setuptools)
 # Testing
-#BuildRequires:	python3dist(fsspec)
-#BuildRequires:	python3dist(lxml)
-#BuildRequires:	python3dist(numpy)
-#BuildRequires:	python3dist(pytest)
+#BuildRequires:	python%%{pyver}dist(fsspec)
+#BuildRequires:	python%%{pyver}dist(lxml)
+#BuildRequires:	python%%{pyver}dist(numpy)
+#BuildRequires:	python%%{pyver}dist(pytest)
 
 BuildArch:      noarch
 
