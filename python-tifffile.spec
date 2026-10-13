@@ -10,7 +10,9 @@ Group:          Development/Python
 URL:            https://www.lfd.uci.edu/~gohlke/
 
 BuildRequires:  pkgconfig(python3)
+BuildRequires:  python%{pyver}dist(pip)
 BuildRequires:  python%{pyver}dist(setuptools)
+BuildRequires:  python%{pyver}dist(wheel)
 # Testing
 #BuildRequires:	python%%{pyver}dist(fsspec)
 #BuildRequires:	python%%{pyver}dist(lxml)
@@ -29,7 +31,7 @@ Tifffile is a Python library to
 %doc README.rst
 %{_bindir}/*
 %{python3_sitelib}/%{module}/
-%{python3_sitelib}/%{module}-*.egg-info/
+%{python3_sitelib}/%{module}-*.dist-info/
 
 #---------------------------------------------------------------------------
 
